@@ -8,7 +8,7 @@ def getDBConnection():
     port = 3306
     database = 'bankdb'
     user = 'root'
-    password = 'root123'
+    password = '' #somepassword
     con = mysql.connector.connect(host=host, port=port, database=database, user=user, password=password)
     cur = con.cursor()
     if con is not None:
